@@ -1,32 +1,26 @@
-import { Link } from "react-router-dom";
-
-function SiteFooter() {
+﻿function SiteFooter() {
   return (
-    <footer className="bg-lyken-charcoal px-6 py-16 text-lyken-cream md:px-16">
-      <div className="mx-auto max-w-[1440px]">
-        <div className="flex flex-col justify-between gap-12 md:flex-row">
-          <div>
-            <Link to="/" className="font-display text-5xl tracking-[0.15em]">
-              LYKEN
-            </Link>
-
-            <p className="mt-4 text-xs tracking-wide text-lyken-sand">
-              Beauty, thoughtfully elevated.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 text-xs tracking-[0.15em]">
-            <Link to="/products">COLLECTION</Link>
-            <Link to="/about">OUR STORY</Link>
-            <Link to="/contact">CONTACT</Link>
-          </div>
-        </div>
-
-        <div className="mt-16 border-t border-white/20 pt-6">
-          <p className="text-[10px] tracking-wider text-lyken-sand">
-            © {new Date().getFullYear()} LYKEN. ALL RIGHTS RESERVED.
+    <footer className="bg-[#29251F] px-6 py-12 text-[#F4EFE7] sm:px-10 lg:px-16">
+      <div className="mx-auto flex max-w-7xl flex-col justify-between gap-10 md:flex-row">
+        <div>
+          <h2 className="font-display text-4xl tracking-[0.15em] text-[#C6A45B]">
+            LYKEN
+          </h2>
+          <p className="mt-3 text-xs tracking-wide text-[#F4EFE7]/60">
+            The art of everyday skincare.
           </p>
         </div>
+
+        <div className="flex flex-wrap gap-8 text-xs uppercase tracking-[0.15em] text-[#F4EFE7]/75">
+          <a href="/" className="transition-colors hover:text-[#C6A45B]">Home</a>
+          <a href="/collection" className="transition-colors hover:text-[#C6A45B]">Collection</a>
+          <a href="/about" className="transition-colors hover:text-[#C6A45B]">About</a>
+          <a href="/contact" className="transition-colors hover:text-[#C6A45B]">Contact</a>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-12 max-w-7xl border-t border-white/15 pt-6 text-[10px] tracking-wide text-[#F4EFE7]/50">
+        © {new Date().getFullYear()} LYKEN. All rights reserved.
       </div>
     </footer>
   );
